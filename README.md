@@ -6,10 +6,10 @@
 Убедитесь, что у вас установлен Python 3.10+.
 
 Клонируйте репозиторий:
-\```python
+```python
 git clone https://github.com/vunraks/NDM-Search-Vacancy/tree/main
 cd myproject
-\```
+```
 
 python -m venv venv
 
