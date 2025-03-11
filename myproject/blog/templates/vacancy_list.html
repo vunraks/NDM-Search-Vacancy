@@ -1,0 +1,10 @@
+<h1>Список вакансий</h1>
+<a href="{% url 'vacancy_create' %}">Добавить вакансию</a>
+<ul>
+    {% for vacancy in vacancies %}
+        <li>
+            <a href="{% url 'vacancy_detail' vacancy.pk %}">{{ vacancy.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
+

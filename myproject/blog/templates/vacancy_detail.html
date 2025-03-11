@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ vacancy.title }}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+</head>
+<body>
+  <header>
+    <div class="shapka" >
+    <h1>Подробная информация вакансии</h1>
+    <nav>
+      <ul>
+        <li><a href="{% url 'home_page' %}">Главная</a></li>
+        <li><a href="{% url 'about_page' %}">О нас</a></li>
+        <li><a href="{% url 'contact_page' %}">Связаться</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <main>
+    <div class="form-container">
+        <form method="post" class="vacancy-form">
+        <h1>{{ vacancy.title }}</h1>
+        <p>{{ vacancy.description }}</p>
+        <p><strong>Компания:</strong> {{ vacancy.company }}</p>
+        <p><strong>Локация:</strong> {{ vacancy.location }}</p>
+        <p><strong>Зарплата:</strong> {{ vacancy.salary }}₸</p>
+        <p><strong>Опыт работы:</strong> {{ vacancy.experience }} лет</p>
+
+<a href="{% url 'vacancy_update' vacancy.pk %}">Редактировать</a>
+<a href="{% url 'home_page' %}">Назад к списку</a>
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static '/css/style.css' %}" />
+    <title>Список вакансий</title>
+  </head>
+  <body>
+    <header>
+      <div class="shapka" >
+      <h1>Поиск вакансий</h1>
+      <nav>
+        <ul>
+          <li><a href="{% url 'home_page' %}">Главная</a></li>
+          <li><a href="{% url 'about_page' %}">О нас</a></li>
+          <li><a href="{% url 'contact_page' %}">Связаться</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+    <main>
+      <section class="search-filter">
+        <form method="GET" action="{% url 'home_page' %}">
+              <input type="text" name="search" placeholder="Поиск по названию" value="{{ request.GET.search }}">
+          <select name="salary">
+            <option value="">Зарплата</option>
+            {% for salary in salaries %}
+                <option value="{{ salary }}" {% if selected_salary == salary %}selected{% endif %}>{{ salary }} ₸</option>
+            {% endfor %}
+          </select>
+          <select name="experience">
+            <option value="">Опыт работы</option>
+            {% for experience in experiences %}
+                <option value="{{ experience }}" {% if selected_experience == experience %}selected{% endif %}>{{ experience }}</option>
+            {% endfor %}
+          </select>
+          <button type="submit">Применить фильтр</button>
+        </form>
+        <a href="{% url 'vacancy_create' %}" class="button1">Создать вакансию</a>
+      </section>
+      <section class="vacancies">
+        {% for vacancy in vacancies %}
+          <div class="vacancy">
+              <h2><a href="{% url 'vacancy_detail' vacancy.pk %}">{{ vacancy.title }}</a></h2>
+              <p><strong>Компания:</strong> {{ vacancy.company }}</p>
+              <p><strong>Зарплата:</strong> {{ vacancy.salary }}₸</p>
+              <p><strong>Опыт:</strong> {{ vacancy.experience }} лет</p>
+          </div>
+        {% empty %}
+          <p>Нет доступных вакансий.</p>
+        {% endfor %}
+      </section>
+    </main>
+  </body>
+</html>

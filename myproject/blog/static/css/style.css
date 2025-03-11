@@ -1,0 +1,198 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+header {
+  background-color: #007bff;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  margin-left: -10%;
+  margin-right: -10%;
+  margin-top: -3.1%;
+}
+
+.button1 {
+  margin-top: 20px; /* Отступ сверху */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+
+}
+.button1:hover{
+background-color: #0056b3;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+.search-filter {
+  padding: 20px;
+  text-align: center;
+}
+.search-filter input,
+.search-filter select {
+  margin: 5px;
+  padding: 10px;
+  width: 200px;
+}
+.vacancies {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.vacancy {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+.vacancy h2 a {
+  text-decoration: none;
+  color: #007bff;
+}
+.vacancy h2 a:hover {
+  text-decoration: underline;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  color: #007bff;
+}
+.info {
+  margin-bottom: 10px;
+}
+
+
+/* Центрирование формы */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Стили для формы */
+.vacancy-form {
+  width: 100%;
+  max-width: 500px; /* Максимальная ширина формы */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.vacancy-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.vacancy-form div {
+  margin-bottom: 15px;
+}
+
+.vacancy-form button:hover {
+  background-color: #0056b3;
+}
+
+.vacancy-form a{
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+.vacancy-form a:hover{
+  background-color: #0056b3;
+}
+
+
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+/* Стили для формы */
+.contact {
+  color: #1275df;
+  text-decoration: none;
+  color: #000000;
+  width: 100%;
+  max-width: 500px; /* Максимальная ширина формы */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+/* Дополнительные стили для полей формы */
+.contact input,
+.contact textarea {
+  width: 480px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact textarea {
+  resize: vertical; /* Разрешить изменение высоты текстового поля */
+}

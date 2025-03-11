@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static './css/style.css'  %}">
+    <title>About</title>
+</head>
+<body>
+    <header>
+        <h1>О нас</h1>
+        <nav>
+          <ul>
+              <li><a href="{% url 'home_page' %}">Главня</a></li>
+                <li><a href="{% url 'about_page' %}">О нас</a></li>
+                <li><a href="{% url 'contact_page' %}">Связаться</a></li>
+            </ul>
+        </nav>
+    </header>
+    </header>
+    <main>
+        <section class="container">
+            <h2>Контактная информация</h2>
+            <p>Email: contact@joblisting.com</p>
+            <p>Телефон: +7 (999) 123-45-67</p>
+            <p>Адрес: г. Москва, ул. Примерная, д. 10</p>
+            <h3>Форма обратной связи</h3>
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>
