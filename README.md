@@ -10,6 +10,10 @@
 git clone https://github.com/vunraks/NDM-Search-Vacancy/tree/main
 cd myproject
 ```
-
+#Создаем виртуальное оружение и активируем его:
+```python
 python -m venv venv
+source venv/bin/activate #macOS/LINUX
+venv\Scripts\ctivate
+```
 
