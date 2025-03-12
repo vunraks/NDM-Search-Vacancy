@@ -1,4 +1,7 @@
 # Веб-приложение для управления вакансиями Проект представляет собой веб-приложение на Django, позволяющее управлять вакансиями.
+![image](https://github.com/user-attachments/assets/74385d5d-a9f0-48d6-8190-a31642887dad)
+![image](https://github.com/user-attachments/assets/94bd04f9-c244-4ad1-8b0a-ac12b73fae6b)
+![image](https://github.com/user-attachments/assets/5804949a-3bae-48ce-acd3-0d475a33d1df)
 
 
 
